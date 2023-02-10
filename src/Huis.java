@@ -2,7 +2,7 @@ public class Huis {
     String Postcode;
     int AantalKamers;
     double TotaleOppervalkete;
-    int Verdiepingen;
+    int Verdiepingen = 1;
     int Prijs;
     double PerceelOppervlakte;
     double TuinOppervlakte;
