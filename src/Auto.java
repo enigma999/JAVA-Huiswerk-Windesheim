@@ -2,12 +2,18 @@ public class Auto {
     private String merk;
     private String type;
     private int pk;
+    private int serialNumber;
+    private static int currentSerialNumber =1;
+    private boolean heeftProductieFout=false;
 
     public Auto(String merk, String type, int pk) {
         this.merk = merk;
         this.type = type;
         this.pk = pk;
+        this.serialNumber=currentSerialNumber;
+        Auto.currentSerialNumber++;
     }
+
 
     public String getMerk() {
         return merk;
@@ -31,6 +37,10 @@ public class Auto {
 
     public void setPk(int pk) {
         this.pk = pk;
+    }
+
+    public int getSerialNumber() {
+        return serialNumber;
     }
 
     @Override

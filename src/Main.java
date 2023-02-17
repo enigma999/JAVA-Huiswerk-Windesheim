@@ -16,6 +16,11 @@ public class Main {
                 Fabriek.totaalAantalGemaakteAutos); // 5
         System.out.println(fabriekTwee.aantalGemaakteAutos);
         System.out.println(fabriek.aantalGemaakteAutos);
+        fabriekTwee.registreerProductieFout(2);
+        fabriekTwee.registreerProductieFout(2);
+        fabriekTwee.registreerProductieFout(4);
+        fabriekTwee.registreerProductieFout(18);
+
 
     }
 }
