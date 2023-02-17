@@ -12,22 +12,12 @@ public class Laptop {
 
     public Laptop(String naam, String OS, int schermdiagonaal) {
         this.naam = naam;
-
-        this.schermdiagonaal = schermdiagonaal;
         switch (OS.toUpperCase()) {
-            case "WINDOWS":
-                this.OS = OS;
-                break;
-            case "MACOS":
-                this.OS = OS;
-                break;
-            case "LINUX":
-                this.OS = OS;
-                break;
-            default:
+            case "WINDOWS", "LINUX", "MACOS" -> this.OS = OS;
+            default -> {
                 this.OS = "undefined";
                 System.out.println("geen geldige OS. kies uit Windows, macOS, Linux");
-                break;
+            }
         }
         if(10<schermdiagonaal&&24>schermdiagonaal) {
             this.schermdiagonaal=schermdiagonaal;
@@ -38,8 +28,8 @@ public class Laptop {
 
     }
 
-//        this.schermdiagonaal = schermdiagonaal;
-}
+
+
 
     public String getNaam() {
         return naam;
