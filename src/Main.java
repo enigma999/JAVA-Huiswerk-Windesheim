@@ -10,5 +10,6 @@ public class Main {
         KbsGroep groep1 = new KbsGroep();
         s1.setGroep(groep1);
         s2.setGroep(groep1);
+        Laptop laptop1=new Laptop("pc","windows",24);
     }
 }
